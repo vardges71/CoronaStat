@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/labelCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="country:" />
+
+    <TextView
+        android:id="@+id/resultCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelCountry"
+        android:layout_alignBottom="@id/labelCountry"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/labelTCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCountry"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="total cases:" />
+
+    <TextView
+        android:id="@+id/resultTCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelTCases"
+        android:layout_alignBottom="@id/labelTCases"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/labelTRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTCases"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="total recovered:" />
+
+    <TextView
+        android:id="@+id/resultTRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelTRecovered"
+        android:layout_alignBottom="@id/labelTRecovered"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/labelTDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTRecovered"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="total deaths:" />
+
+    <TextView
+        android:id="@+id/resultTDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelTDeaths"
+        android:layout_alignBottom="@id/labelTDeaths"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/labelNCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTDeaths"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="new cases today:" />
+
+    <TextView
+        android:id="@+id/resultNCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelNCases"
+        android:layout_alignBottom="@id/labelNCases"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/labelNDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelNCases"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="new deaths today:" />
+
+    <TextView
+        android:id="@+id/resultNDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelNDeaths"
+        android:layout_alignBottom="@id/labelNDeaths"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/labelACases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelNDeaths"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="active cases:" />
+
+    <TextView
+        android:id="@+id/resultACases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelACases"
+        android:layout_alignBottom="@id/labelACases"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
+</RelativeLayout>
