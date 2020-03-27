@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">CoronaStatisticV1</string>
-    <string name="hint"><font size = "18" style = "normal"></font>"insert country code (ex. US)"</string>
-</resources>
