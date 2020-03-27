@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ArrayList<Statistic> statisticList;
     StatListAdapter statListAdapter;
-//    ArrayAdapter<Statistic> statisticAdapter;
 
     public void initialize() {
 
@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                 statisticList.add(st1);
                                 statListAdapter.notifyDataSetChanged();
+
                             }
                         } catch (JSONException e) {
 
