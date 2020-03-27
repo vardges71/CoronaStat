@@ -8,9 +8,10 @@ public class Statistic {
             resultTDeaths,
             resultNCases,
             resultNDeaths,
-            resultACases;
+            resultACases,
+            seriousCases;
 
-    public Statistic(String resultCountry, int resultTCases, int resultTRecovered, int resultTDeaths, int resultNCases, int resultNDeaths, int resultACases) {
+    public Statistic(String resultCountry, int resultTCases, int resultTRecovered, int resultTDeaths, int resultNCases, int resultNDeaths, int resultACases, int seriousCases) {
 
         this.resultCountry = resultCountry;
         this.resultTCases = resultTCases;
@@ -19,6 +20,7 @@ public class Statistic {
         this.resultNCases = resultNCases;
         this.resultNDeaths = resultNDeaths;
         this.resultACases = resultACases;
+        this.seriousCases = seriousCases;
     }
 
     public String getResultCountry() {
@@ -76,4 +78,10 @@ public class Statistic {
     public void setResultACases(int resultACases) {
         this.resultACases = resultACases;
     }
+
+    public int getSeriousCases() {
+        return seriousCases;
+    }
+
+    public void setSeriousCases(int seriousCases) { this.seriousCases = seriousCases; }
 }

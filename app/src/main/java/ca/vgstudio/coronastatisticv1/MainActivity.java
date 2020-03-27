@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btnShow:
                 jsonParse();
+                countryCode.onEditorAction(EditorInfo.IME_ACTION_DONE);
                 break;
             case R.id.btnClear:
                 statListAdapter.clear();
@@ -106,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 int total_new_cases_today = stat.getInt("total_new_cases_today");
                                 int total_new_deaths_today = stat.getInt("total_new_deaths_today");
                                 int total_active_cases = stat.getInt("total_active_cases");
+                                int total_serious_cases = stat.getInt("total_serious_cases");
 
                                 Statistic st1 = new Statistic(
                                         title,
@@ -114,7 +116,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                         total_deaths,
                                         total_new_cases_today,
                                         total_new_deaths_today,
-                                        total_active_cases );
+                                        total_active_cases,
+                                        total_serious_cases);
 
                                 statisticList.add(st1);
                                 statListAdapter.notifyDataSetChanged();

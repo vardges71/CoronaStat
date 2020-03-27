@@ -165,4 +165,27 @@
         android:textSize="18sp"
         android:text="" />
 
+    <TextView
+        android:id="@+id/labelSCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelACases"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="serious cases:" />
+
+    <TextView
+        android:id="@+id/resultSCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/labelSCases"
+        android:layout_alignBottom="@id/labelSCases"
+        android:layout_alignParentRight="true"
+        android:textColor="#4C0101"
+        android:textSize="18sp"
+        android:text="" />
+
 </RelativeLayout>

@@ -38,6 +38,7 @@ public class StatListAdapter extends ArrayAdapter<Statistic> {
         TextView resultNCases = (TextView) customView.findViewById(R.id.resultNCases);
         TextView resultNDeaths = (TextView) customView.findViewById(R.id.resultNDeaths);
         TextView resultACases = (TextView) customView.findViewById(R.id.resultACases);
+        TextView resultSCases = (TextView) customView.findViewById(R.id.resultSCases);
 
 
         resultCountry.setText(statistic.getResultCountry());
@@ -47,6 +48,7 @@ public class StatListAdapter extends ArrayAdapter<Statistic> {
         resultNCases.setText(String.valueOf(statistic.getResultNCases()));
         resultNDeaths.setText(String.valueOf(statistic.getResultNDeaths()));
         resultACases.setText(String.valueOf(statistic.getResultACases()));
+        resultSCases.setText(String.valueOf(statistic.getSeriousCases()));
 
         return customView;
     }
