@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void initializeToolbar () {
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Home");
+        actionBar.setTitle("");
         actionBar.setDisplayShowHomeEnabled(true);
 
     }

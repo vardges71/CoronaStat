@@ -22,4 +22,5 @@
     <color name="fieldBackground">#00275414</color>
     <color name="textFieldHint">#B2FFFFFF</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="darkRed">#7F0303</color>
 </resources>
