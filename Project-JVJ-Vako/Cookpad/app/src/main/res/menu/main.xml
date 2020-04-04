@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:title="Finder"
+        android:id="@+id/btnGoToFinder"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/search_icon"
+
+        />
+
+    <item android:title="Favorites"
+        android:id="@+id/btnGoToFavorites"
+        android:orderInCategory="102"
+        app:showAsAction="always"
+        android:icon="@drawable/fav_icon"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:title="Account"
+        android:id="@+id/btnGoToAccount"
+        android:icon="@drawable/iconaccount"
+        android:orderInCategory="103"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

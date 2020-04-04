@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#275414</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="green_cookpad">#275414</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#3A6328</color>
+
+    <color name="black">#000000</color>
+
+
+    //Vako colors
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="fieldTextBrown">#275414</color>
+    <color name="fieldBack">#CCFFFFFF</color>
+    <color name="btnBack">#275414</color>
+    <color name="textColor">#333333</color>
+    <color name="hintColor">#555555</color>
+    <color name="titleColor">#275414</color>
+    <color name="White">#FFFFFF</color>
+    <color name="fieldBackground">#00275414</color>
+    <color name="textFieldHint">#B2FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>
