@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String cCode = countryCode.getText().toString();
 
-        String url = "https://thevirustracker.com/free-api?countryTotal" + "=" + cCode;
+        String url = "https://api.thevirustracker.com/free-api?countryTotal" + "=" + cCode;
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
