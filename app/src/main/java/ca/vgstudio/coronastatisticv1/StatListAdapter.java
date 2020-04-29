@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,8 +26,7 @@ public class StatListAdapter extends ArrayAdapter<Statistic> {
         View customView = convertView;
 
         if (customView == null){
-            customView = inflater.inflate(R.layout.statistic, parent,false);
-        }
+            customView = inflater.inflate(R.layout.statistic, parent,false); }
 
         Statistic statistic = getItem(position);
         TextView resultCountry = (TextView) customView.findViewById(R.id.resultCountry);
